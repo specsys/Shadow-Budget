@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+body {
+	background-color: #0;
+	background-image: url("../images/bgrnd.jpg");
+	background-repeat: no-repeat;
+	font-family: verdana, lucida, sans, arial, sans-serif;
+	margin-top: 0;
+}
+
+fieldset {
+	border: 0 none;
+}
+
+.component {
+	height: inherit;
+}
+
+#dlgMsg {
+	display: none;
+	font-size: 0.8em;
+}
+
+#dlgMsg .dlg-body {
+	padding: 0 20px 0 20px;
+}
+
+#dlgMsg .dlg-icon {
+	width: 64px;
+	height: 64px;
+	background-image: url("../images/mbicons.png");
+	background-repeat: no-repeat;
+}
+
+#dlgMsg .dlg-icon.icon-error {
+	background-position: 0px 0px;
+}
+
+#dlgMsg .dlg-icon.icon-info {
+	background-position: -64px 0px;
+}
+
+#dlgMsg .dlg-icon.icon-warning {
+	background-position: -128px 0px;
+}
+
+
+#dlgMsg .dlg-icon.icon-question {
+	background-position: -192px 0px;
+}
+
+
+/* Side Menu */
+
+.sidePageControl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.sideMenu {
+	background-image: url("../images/sidemenuback.jpg");
+    background-repeat: repeat;
+    border: 1px solid #406080;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 10px 2px #406080;
+    color: #FFFFFF;
+    float: left;
+    font-size: 0.96em;
+    list-style: none outside none;
+    margin: 50px 0;
+    min-width: 180px;
+    width: 12%;
+    padding: 20px 0 20px 20px;
+}
+
+.sideMenu li.sideMenuItem {
+	cursor: pointer;
+	border-radius: 10px 0 0 10px;
+	padding: 1px;
+	margin-top: 5px;
+}
+
+.sideMenu li.sideMenuItem:hover {
+	background-image: url("../images/menubuttonback.png");
+	background-repeat: repeat-x;
+	border: 1px solid #AAB1C0;
+	box-shadow: 0 0 5px 2px #4097F3;
+	padding: 0;
+}
+
+
+.sideMenu li.sideMenuItem.active {
+	background: none;
+	background-color: #FFF;
+	box-shadow: 0 0 3px 1px #DFDFFF;
+	color: #000;
+}
+
+.sideMenu li.sideMenuItem.active:hover {
+	box-shadow: 0 0 3px 1px #DFDFFF;
+	border:none;
+	padding: 1px;
+	cursor: default;
+}
+
+
+.sideMenu li.sideMenuItem div.data {
+	padding: 5px 15px;
+}
+
+.sidePageContainer {
+    float: left;
+    height: 100%;
+    margin: -30px -1px;
+    width: 80%;
+    z-index: 0;
+}
+
+.sidePageContainer .adminPage {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.sidePageContainer .adminPage.active {
+	display: block
+}
+
+.sidePageContainer .adminPage .items {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px 0 #000000;
+    width: 80%;
+    height: 100%;
+}
+
+.window {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px 0 #000000;
+}
+
+.pane {
+	padding: 10px;
+}
+
+.fill {
+	width: 100%;
+	height: 100%;
+}

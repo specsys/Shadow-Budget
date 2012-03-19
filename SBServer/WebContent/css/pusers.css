@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+#userListPane {
+	float: left;
+	height: 100%;
+	width: 60%;
+}
+
+#userAboutPane {
+	float:right;
+	width: 40%;
+	height: 30%;
+}
+
+#userInfoPane {
+	float:right;
+	width: 40%;
+	height: 70%;
+}

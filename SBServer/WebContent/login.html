@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>SIS 'Shadow Budget'</title>
+		<link type="text/css" href="css/common.css" rel="stylesheet" />
+		<link type="text/css" href="css/redmond/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript">
+		
+			$(function(){
+				var btn = $('#loginButton').button();
+				btn.css('margin-left', (btn.parent().width() - btn.width())/2);
+				
+			});
+			
+		</script>
+		<style type="text/css">
+			#loginForm {
+				background-color: #FFFFFF;
+				border-radius: 20px 20px 20px 20px;
+				left: 50%;
+				position: absolute;
+				top: 40%;
+				width: 600px;
+				margin: 0 auto auto -300px;
+				box-shadow: 0 0 10px 2px #DFDFFF;
+				font-family: verdana, lucida, sans, arial, sans-serif;
+			}
+			
+			#loginForm fieldset {
+				margin: 0 20% 0 20%;
+			}
+			
+			#loginForm label {
+				display: block;
+				margin: 10px 0 3px 0;
+			}
+			
+			#loginForm input {
+				width: 100%;
+				font-size: 1.5em;
+			}
+			
+			#logo {
+				background-image: url("images/sblogo.png");
+				width: 373px;
+				height: 200px;
+				margin: 20px auto 20px 113px;
+			}
+			
+			#loginButton {
+				margin: 10px 0 20px 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id='loginForm' class='ui-widget' title='Аутентификация'>
+			<div id='logo'></div>
+			<form action="">
+				<fieldset>
+					<label for="name">Имя пользователя</label>
+					<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+					<label for="password">Пароль</label>
+					<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+				</fieldset>
+				<button id="loginButton">Войти</button>
+			</form>
+		</div>
+	</body>
+</html>
+
+

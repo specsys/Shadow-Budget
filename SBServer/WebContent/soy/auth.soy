@@ -1,0 +1,20 @@
+{namespace components.auth}
+
+/**
+ * Runs the authentication module
+ */
+{template .main}
+<link type="text/css" href="css/auth.css" rel="stylesheet" />
+<script type="text/javascript" src="js/auth.js"></script>
+		
+<div id='loginForm' class='ui-widget'>
+	<div id='logo'></div>
+	<fieldset>
+		<label for="name">Имя пользователя</label>
+		<input type="text" name="user" class="text ui-widget-content ui-corner-all" />
+		<label for="password">Пароль</label>
+		<input type="password" name="password" value="" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	<button id="loginButton">Войти</button>
+</div>
+{/template}

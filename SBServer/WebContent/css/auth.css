@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+#loginForm {
+	background-color: #FFFFFF;
+	border-radius: 20px 20px 20px 20px;
+	left: 50%;
+	position: absolute;
+	top: 40%;
+	width: 600px;
+	margin: 0 auto auto -300px;
+	box-shadow: 0 0 10px 2px #DFDFFF;
+	font-family: verdana, lucida, sans, arial, sans-serif;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#loginForm fieldset {
+	margin: 0 20% 0 20%;
+}
+
+#loginForm label {
+	display: block;
+	margin: 10px 0 3px 0;
+}
+
+#loginForm input {
+	width: 100%;
+	font-size: 1.5em;
+}
+
+#logo {
+	background-image: url("../images/sblogo.png");
+	width: 373px;
+	height: 200px;
+	margin: 20px auto 20px 113px;
+}
+
+#loginButton {
+	left:50%;
+	position:relative;
+	margin: 10px 0 20px 0;
+}
+

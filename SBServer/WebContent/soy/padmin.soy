@@ -1,0 +1,33 @@
+{namespace components.padmin}
+
+/**
+ * Runs the admin page
+ */
+{template .main}
+<link type="text/css" href="css/padmin.css" rel="stylesheet" />
+<script type="text/javascript" src="js/padmin.js"></script>
+<div class="sidePageControl">
+	<ul id="adminMenu" class="sideMenu">
+		<li class="sideMenuItem" page="orgsPage">
+			<div class="data">Организации</div>
+		</li>
+		<li class="sideMenuItem active" page="usersPage">
+			<div class="data">Пользователи</div>
+		</li>
+		<li class="sideMenuItem" page="settingsPage">
+			<div class="data">Настройки</div>
+		</li>
+	</ul>
+	<div id="adminPageContainer" class="sidePageContainer">
+		<div class="adminPage" page="orgsPage">
+			<div class="items"></div>
+		</div>
+		<div class="adminPage active" page="usersPage">
+			<div class="items"></div>
+		</div>
+		<div class="adminPage" page="settingsPage">
+			<div class="items"></div>
+		</div>
+	</div>
+</div>
+{/template}

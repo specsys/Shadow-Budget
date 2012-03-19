@@ -1,0 +1,30 @@
+{namespace components.desktop}
+
+/**
+ * Runs the desktop module
+ * @param pages Subj
+ * @param pageTitles Sux
+ */
+{template .main}
+<link type="text/css" href="css/desktop.css" rel="stylesheet" />
+<script type="text/javascript" src="js/desktop.js"></script>
+
+<div id="desktopHeader">
+/*	<div id="desktopLogo"></div> */
+	<ul id="desktopMenu">
+		{foreach $p in $pages}
+		<li class="menuitem" component="{$p}">
+			<div class="data">{$pageTitles[$p]}</div>
+			<div class="note">{$pageTitles[$p]}</div>
+		</li>
+		{/foreach}
+	</ul>
+	
+	<div class="floatbreak"></div>
+</div>
+<div id="pageContainer">
+	{foreach $p in $pages}
+	<div class="page" component="{$p}"></div>
+	{/foreach}
+</div>
+{/template}
